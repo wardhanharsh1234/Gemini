@@ -7,9 +7,9 @@ const ContextProvider = (props) => {
     const [input, setInput] = useState("");
     const [recentPrompt, setRecentPrompt] = useState("");
     const [prevPrompts, setprevPrompts] = useState([]);
-    const [showResult, setShowResult] = useState(false);
-    const [loading, setLoading] = useState(false);
-    const [resultData, setResultData] = useState("");
+    let [showResult, setShowResult] = useState(false);
+    let [loading, setLoading] = useState(false);
+    let [resultData, setResultData] = useState("");
 
 
     const delayPara = (index,nextWord)=>{
